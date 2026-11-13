@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa do Brasil · estados e municípios</title>
+  <link rel="stylesheet" href="src/brasil-mapa.css">
+  <link rel="stylesheet" href="src/demo.css">
+</head>
+<body>
+  <main class="pagina">
+    <header>
+      <h1>Mapa do Brasil</h1>
+      <p>Clique num estado para ver os municípios · role ou use +/− para aproximar · Esc volta ao Brasil</p>
+      <div class="controles">
+        <label>Métrica <select id="metrica"><option value="valor">Lorem ipsum</option><option value="crescimento">Dolor sit amet</option></select></label>
+        <button type="button" id="tema">Tema: sistema</button>
+      </div>
+    </header>
+    <div id="mapa"></div>
+    <p class="evento" id="evento">Nenhuma seleção</p>
+    <footer>Dados fictícios (gerados aleatoriamente) apenas para demonstração. Malhas: IBGE.</footer>
+  </main>
+  <script src="vendor/d3.v7.min.js"></script>
+  <script src="src/brasil-mapa.js"></script>
+  <script src="src/demo.js"></script>
+</body>
+</html>

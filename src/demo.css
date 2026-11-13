@@ -1,0 +1,12 @@
+:root { color-scheme: light dark; --fundo: #F4F6FA; --texto: #1B1F2E; --texto-2: #5E6476; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fundo: #0F1320; --texto: #E7EAF2; --texto-2: #9AA2B5; } }
+:root[data-theme="dark"] { --fundo: #0F1320; --texto: #E7EAF2; --texto-2: #9AA2B5; color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+.pagina { max-width: 1100px; margin: 0 auto; padding: 24px 16px 40px; }
+h1 { margin: 0 0 4px; font-size: 1.6rem; color: #1539AA; }
+:root[data-theme="dark"] h1 { color: #8FA8E4; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) h1 { color: #8FA8E4; } }
+header p, footer, .evento { color: var(--texto-2); font-size: .9rem; }
+.controles { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 12px 0 14px; }
+select, .controles button { font: inherit; font-size: .9rem; padding: 6px 10px; border-radius: 8px; border: 1px solid #C3C9D6; background: transparent; color: inherit; }
